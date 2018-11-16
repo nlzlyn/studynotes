@@ -132,7 +132,7 @@ $ git add readme.txt
 3. 用命令git commit告诉Git，把文件提交到仓库
     - -m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样就能从历史记录里方便地找到改动记录
     - git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）
-    - git commit --amend 命令（修改最近一次提交的注释信息）：进入 vim 编辑器，按下字母键 c（此时进入编辑状态），开始修改注释信息，
+    - git commit --amend 命令（修改最近一次提交的注释信息）：进入 vim 编辑器，按字母键 c（此时进入编辑状态），开始修改注释信息，修改好后按Esc (退出编辑状态)，接着连按两次大写字母Z，保存退出
 
 ```python
 $ git commit -m "wrote a readme file"
