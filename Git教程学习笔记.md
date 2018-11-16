@@ -10,6 +10,7 @@
 
 - git init：初始化一个 Git 仓库
 - git add <file\>，git commit -m <message\>：两步添加文件到 Git 仓库
+- git add . ：添加目录下所有内容到暂存区
 - git status：查看工作区当前状态（文件是否被修改过）
 - git diff：查看修改内容
 - git log：查看提交历史，以便确定要回退到哪个版本
@@ -131,7 +132,7 @@ $ git add readme.txt
 3. 用命令git commit告诉Git，把文件提交到仓库
     - -m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样就能从历史记录里方便地找到改动记录
     - git commit命令执行成功后会告诉你，1 file changed：1个文件被改动（我们新添加的readme.txt文件）；2 insertions：插入了两行内容（readme.txt有两行内容）
-
+    - git commit --amend 命令（修改最近一次提交的注释信息）：进入 vim 编辑器，按下字母键 c（此时进入编辑状态），开始修改注释信息，
 
 ```python
 $ git commit -m "wrote a readme file"
